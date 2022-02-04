@@ -5,11 +5,12 @@ import Task from './components/Task';
 export default function App() {
   return (
     <View style={styles.container}>
+
       {/*Tarefas de Hoje*/}
       <View style={styles.tasksWrapper}>
         <Text style={styles.sectionTitle}>Tarefas de Hoje</Text>
 
-        <View styles={styles.items}>
+        <View style={styles.items}>
           {/*Tarefas para fazer*/}
           <Task text={'Tarefa 1'}/>
           <Task text={'Tarefa 2'}/>
@@ -30,7 +31,9 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
-  items: {},
+  items: {
+    marginTop: 30,
+  },
 });
