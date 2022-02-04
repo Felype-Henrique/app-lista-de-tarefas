@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Platform, StyleSheet, Text, TextInput, TouchableOpacity, View, KeyboardAvoidingView } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
+  const [task, setTask] = useState();
+
   return (
     <View style={styles.container}>
 
